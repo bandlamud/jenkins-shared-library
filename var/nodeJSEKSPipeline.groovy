@@ -1,4 +1,4 @@
-def () {
+def (configMap) {
         pipeline {
         agent {
             node {
@@ -9,8 +9,8 @@ def () {
         environment {
             COURSE = "Jenkins"
             ACC_ID = "022779559954"
-            PROJECT = "roboshop"
-            COMPONENT = "catalogue"
+            PROJECT = configMap.get("project")
+            COMPONENT = configMap.get("component")
         }
 
         options {
