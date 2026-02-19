@@ -127,7 +127,7 @@ def call (Map configMap) {
                     }
                 } */
 
-                    /* stage('Trigger SG') {
+                    stage('Trigger SG') {
                         steps {
                             script {
                                 build job: '../catalogue-deploy',
@@ -139,7 +139,7 @@ def call (Map configMap) {
                                 ]
                             }
                         }
-                    } */
+                    }
                 }
 
             post {
