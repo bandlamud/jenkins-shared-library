@@ -130,7 +130,7 @@ def call (Map configMap) {
                     stage('Trigger SG') {
                         steps {
                             script {
-                                build job: '../${COMPONENT}',
+                                build job: "../${COMPONENT}-deploy",
                                     wait: false,     // Wait for completion
                                     propagate: false, // Propagate status
                                     parameters: [
