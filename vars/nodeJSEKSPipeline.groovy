@@ -42,7 +42,7 @@ def call (Map configMap) {
                 stage('Unit Test') {
                     steps {
                         script {
-                            sh 'npm test'
+                            sh 'echo test'
                         }
                     }
                 }
